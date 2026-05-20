@@ -1,12 +1,11 @@
-import { useState } from "react";
-import { Button, HStack } from "@chakra-ui/react";
+import { BrowserRouter, Link } from "react-router-dom";
+import { Router } from "./components/router/Router";
 
 function App() {
   return (
-    <HStack>
-      <Button colorPalette="teal">Click me</Button>
-      <Button>Click me</Button>
-    </HStack>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   );
 }
 
